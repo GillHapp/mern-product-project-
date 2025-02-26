@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom"
 import Navbar from "./Navbar"
 import Home from "./Home"
 import Create from "./Create"
+import UpdateProduct from "./UpdateProduct"
 
 
 
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="create" element={<Create />} />
+          <Route path="/update/:id" element={<UpdateProduct />} />
         </Routes>
       </Box>
     </>
